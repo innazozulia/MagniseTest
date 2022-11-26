@@ -1,0 +1,327 @@
+/* font-family: 'Tajawal',sans-serif; */
+/* font-family: 'Roboto',sans-serif; */
+
+/* colors */
+:root {
+    --green: #B6E750;
+    --white: #ffffff;
+    --purple: #87009D;
+    --black: #000000;
+    --input: #2E2721;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1920px;
+    height: 1069px;
+    display: flex;
+    background-image: url("./img/bg.png");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    position: relative;
+}
+
+/* .container {
+    max-width: 1920px;
+    height: 1069px;
+} */
+
+.container img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.content {
+    position: absolute;
+    top: 160px;
+    /* right: -20px; */
+    right: 277px;
+    text-align: center;
+}
+
+.logo {
+    width: 255px;
+    height: 61px;
+}
+
+h1 {
+    font-family: 'Tajawal', sans-serif;
+    max-width: 689px;
+    color: var(--white);
+    font-size: 44px;
+    font-weight: 700;
+    margin-top: 31px;
+}
+
+.subtitle {
+    font-family: 'Tajawal', sans-serif;
+    color: var(--green);
+    font-size: 44px;
+    font-weight: 700;
+}
+
+p {
+    color: var(--white);
+    font-size: 26px;
+    font-weight: 700;
+    max-width: 494px;
+    align-items: center;
+    text-align: center;
+    margin-top: 18px;
+}
+
+
+/* form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 328px;
+}
+
+input {
+    box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 29px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--input);
+    border: none;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.argeement {
+    font-family: 'Tajawal', sans-serif;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+.form-btn {
+    background: linear-gradient(182deg, rgba(255, 255, 255, 1) 0%, rgba(158, 235, 0, 0.7777704831932774) 52%);
+    box-shadow: 0px 3px 6px #00000029;
+    width: 322px;
+    height: 52px;
+    border-radius: 5px;
+    font-family: 'Tajawal', sans-serif;
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* second section */
+
+.info {
+    background-image: url("./img/bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+}
+
+.statistics-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    max-width: 792px;
+    margin: 0 auto;
+    padding-top: 82px;
+
+}
+
+.statistics-description {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    color: var(--black);
+    margin-top: 23px;
+}
+
+.info-title {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--purple);
+    /* margin-top: 67px; */
+    max-width: 1131px;
+    margin: 65px auto;
+    height: 135px;
+    text-align: center;
+}
+
+/* Achievements Container */
+.achievements-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    max-width: 1215px;
+    margin: 0 auto;
+    justify-content: center;
+    /* gap: 74px; */
+    gap: 110px;
+
+}
+
+.achievements-item {
+    background-image: url(./img/box.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 354px;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.icon {
+    width: 70px;
+    height: 63px;
+    object-fit: contain;
+}
+
+.achievements-title {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 27px 0 16px 0;
+    color: var(--white);
+}
+
+.achievements-text {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0px 32px;
+    color: var(--white);
+}
+
+.wrapper-btn {
+    margin: 0 auto;
+    padding-bottom: 109px;
+
+}
+
+.achievements-btn {
+    background: linear-gradient(182deg, rgba(255, 255, 255, 1) 0%, rgba(158, 235, 0, 0.7777704831932774) 52%);
+    box-shadow: 0px 3px 6px #00000029;
+    width: 352px;
+    height: 71px;
+    margin-bottom: 109px;
+    border-radius: 5px;
+    font-family: 'Tajawal', sans-serif;
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.swiper {
+    display: none;
+    visibility: hidden;
+}
+
+/* swiper */
+@media screen and (max-width: 500px) {
+    .swiper {
+        display: block;
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .achievements-container {
+        display: none;
+        visibility: hidden;
+        gap: 4px;
+    }
+
+    .achievements-item {
+        width: 281px;
+        height: 365px;
+        object-fit: cover;
+        /* gap: 0;
+        max-width: 400px;
+        margin: 0 auto; */
+    }
+}
+
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-image: url(./img/slider-bg.png);
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    /* width: 50%; */
+    width: 25%;
+    height: 400px;
+}
+
+.swiper-slide {
+    text-align: center;
+    width: auto;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--purple) !important;
+    border: 4px solid var(--purple);
+}
+
+.swiper-pagination-bullet {
+    background-color: white;
+    border: 1px solid var(--purple);
+}
+
+/* .swiper-pagination {
+    /* margin-top: 20px; */
+/* background-color: red; */
+/* color: #87009D;
+
+*/
+/* .slide-image {
+    height: 400px;
+    width: auto;
+} */
