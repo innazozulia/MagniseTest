@@ -19,12 +19,21 @@
 </head>
 
 <body>
-    <!-- <div class="container">
+    <!-- <div class="parallax"></div> -->
+
+    <!-- <div style="height:1000px;background-color:red;font-size:36px">
+        Scroll Up and Down this page to see the parallax scrolling effect.
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div> -->
+
+    <div class="container">
+        <!-- full screen  -->
         <div class="content">
             <img class="logo" src="./img/logo.png" alt="logo" />
             <h1>هل تطمح للتداول باحترافية </h1>
             <p class="subtitle">من فضلك تداول بمعرفة </p>
-            <p>أرسل بياناتك اليوم لتحصل على خدمتنا المجانية المُبتكرة</p>
+            <p class="description">أرسل بياناتك اليوم لتحصل على خدمتنا المجانية المُبتكرة</p>
             <form action="#">
                 <input type="text" placeholder="ali">
                 <input type="text" placeholder="ali@arabic.co.ae">
@@ -36,9 +45,31 @@
                 <button class="form-btn">سجل الآن</button>
             </form>
         </div>
-    </div> -->
+        <!-- mobile screen -->
+        <div class="content-mobile">
+            <div class="wrapper-content">
+                <img class="logo" src="./img/logo.png" alt="logo" />
+                <h1>هل تطمح للتداول باحترافية</h1>
+                <p class="subtitle">من فضلك تداول بمعرفة </p>
+            </div>
+            <div class="wrapper-form">
+                <p class="description">أرسل بياناتك اليوم لتحصل على خدمتنا المجانية المُبتكرة</p>
+                <form action="#">
+                    <input type="text" placeholder="ali">
+                    <input type="text" placeholder="ali@arabic.co.ae">
+                    <input type="password" placeholder="الهاتف">
+                    <div class="checkbox">
+                        <label for="argeement" class="argeement">نشرة اسبوعية وعروض خاصة وتحديثات مستمرة</label>
+                        <input type="checkbox" name="argeement">
+                    </div>
+                    <button class="form-btn">سجل الآن</button>
+                </form>
+            </div>
+            <div class="parallax"></div>
+        </div>
+    </div>
     <div class="info">
-        <div class="statistics-container">
+        <div class="statistics-container ">
             <div class="statistics-item">
                 <img class="number" src="./img/number-1.png" alt="statistic">
                 <p class="statistics-description">دقة التوصيات</p>
@@ -54,7 +85,7 @@
         </div>
         <h2 class="info-title">النجاح في سوق الأوراق المالية هو بالأساس نتاج طبيعي لاستفادتنا من خبرات بعضنا البعض
         </h2>
-        <!-- full screen -->
+        <!-- full screen  -->
         <div class="achievements-container">
             <div class="achievements-item">
                 <img class="icon" src="./img/icon-1.png" alt="icon">
@@ -96,18 +127,11 @@
                 <button class="achievements-btn">سجل الآن</button>
             </div>
         </div>
+
         <!-- modile version -->
         <div class="slider-wrapper">
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="achievements-item">
-                            <img class="icon" src="./img/icon-3.png" alt="icon">
-                            <h2 class="achievements-title">الاسهم</h2>
-                            <p class="achievements-text">اختر من بين أكثر من 450 سهم للتداول في السوق العالمية
-                            </p>
-                        </div>
-                    </div>
                     <div class="swiper-slide">
                         <div class="achievements-item">
                             <img class="icon" src="./img/icon-2.png" alt="icon">
@@ -129,11 +153,9 @@
                     <div class="swiper-slide">
                         <div class="achievements-item">
                             <img class="icon" src="./img/icon-3.png" alt="icon">
-                            <h2 class="achievements-title">المعادن</h2>
-                            <p class="achievements-text">تنويع محفظتك مع المعادن مثل الذهب (الأكثر نشاطا في العالم)
-                                وكذلك
-                                الفضة
-                                والنحاس</p>
+                            <h2 class="achievements-title">الاسهم</h2>
+                            <p class="achievements-text">اختر من بين أكثر من 450 سهم للتداول في السوق العالمية
+                            </p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -154,9 +176,20 @@
                                 منأفضل العملات</p>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="achievements-item">
+                            <img class="icon" src="./img/icon-3.png" alt="icon">
+                            <h2 class="achievements-title">المعادن</h2>
+                            <p class="achievements-text">تنويع محفظتك مع المعادن مثل الذهب (الأكثر نشاطا في العالم)
+                                وكذلك
+                                الفضة
+                                والنحاس</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+            <button class="btn">سجل الآن</button>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
