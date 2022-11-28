@@ -1,7 +1,7 @@
 let btn = document.querySelector(".btn");
 
 function emersion() {
-  if (window.pageYOffset > 250) {
+  if (window.pageYOffset > 280) {
     btn.style.opacity = "1";
   } else {
     btn.style.opacity = "0";

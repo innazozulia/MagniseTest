@@ -48,6 +48,7 @@ h1 {
     font-size: 44px;
     font-weight: 700;
     margin-top: 31px;
+    line-height: 60px;
 }
 
 .subtitle {
@@ -55,11 +56,13 @@ h1 {
     color: var(--green);
     font-size: 44px;
     font-weight: 700;
+    line-height: 60px;
 }
 
 .description {
     color: var(--white);
     font-size: 26px;
+    line-height: 44px;
     font-weight: 700;
     max-width: 494px;
     align-items: center;
@@ -84,9 +87,18 @@ input {
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    line-height: 19px;
     font-weight: 400;
     color: var(--input);
     border: none;
+}
+
+input:last-child {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--input);
 }
 
 .checkbox {
@@ -99,6 +111,7 @@ input {
     color: var(--white);
     font-size: 15px;
     font-weight: 400;
+    line-height: 21px;
     padding-right: 10px;
 }
 
@@ -112,6 +125,7 @@ input {
     color: var(--black);
     font-size: 24px;
     font-weight: 700;
+    line-height: 36px;
     border: none;
     cursor: pointer;
 }
@@ -120,12 +134,25 @@ input {
 /* second section */
 
 .info {
-    background-image: url("./img/bg2.png");
+    /* background-image: url("./img/bg2.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1920px;
 
     padding: 0 10px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("./img/bg2.png");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .statistics-container {
@@ -149,6 +176,7 @@ input {
     font-weight: 500;
     color: var(--black);
     margin-top: 23px;
+    line-height: 60px;
 }
 
 .info-title {
@@ -156,13 +184,15 @@ input {
     font-size: 38px;
     font-weight: 700;
     color: var(--purple);
-    /* margin-top: 67px; */
+    line-height: 60px;
     max-width: 1131px;
     margin: 65px auto;
     height: 135px;
     text-align: center;
     padding: 0 10px;
 }
+
+
 
 /* Achievements Container */
 .achievements-container {
@@ -172,8 +202,8 @@ input {
     max-width: 1215px;
     margin: 0 auto;
     justify-content: center;
-    /* gap: 74px; */
-    gap: 110px;
+    gap: 74px;
+    /* gap: 110px; */
 
 }
 
@@ -200,8 +230,9 @@ input {
 .achievements-title {
     font-family: 'Tajawal', sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 38px;
     margin: 27px 0 16px 0;
+    line-height: 60px;
     color: var(--white);
 }
 
@@ -211,6 +242,7 @@ input {
     font-weight: 500;
     padding: 0px 32px;
     color: var(--white);
+    line-height: 38px;
 }
 
 .wrapper-btn {
@@ -268,12 +300,13 @@ input {
     right: 3px;
     bottom: 20px;
     visibility: hidden;
+    margin: 0px 5px;
 }
 
 
 @media screen and (max-width: 1600px) {
     .container {
-        background: linear-gradient(rgba(102, 101, 101, 0.8), rgba(0, 0, 0, 0.5)), url("./img/bg.png");
+        background: linear-gradient(rgb(55 53 53 / 80%), rgb(28 28 28 / 60%))url("./img/bg.png");
     }
 
 }
@@ -351,6 +384,9 @@ input {
         left: 100px;
     }
 
+    .achievements-container {
+        gap: 110px;
+    }
 }
 
 @media screen and (max-width: 665px) {
@@ -403,10 +439,15 @@ input {
         width: 281px !important;
         height: 365px;
         object-fit: cover;
+    }
 
-        /* gap: 0;
-        max-width: 400px;
-        margin: 0 auto; */
+    .achievements-title {
+        font-size: 34px;
+        padding: 5px;
+    }
+
+    .icon {
+        width: 45px;
     }
 
     .statistics-item:not(:first-child) {
@@ -466,13 +507,20 @@ input {
 
     .description {
         font-size: 23px;
+        line-height: 30px;
     }
 
-    h1,
+    h1 {
+        font-size: 30px;
+        max-width: 323px;
+        line-height: 36px;
+
+    }
+
     .subtitle {
         font-size: 30px;
         max-width: 323px;
-
+        line-height: 35px;
     }
 
     form {
@@ -480,7 +528,7 @@ input {
     }
 
     input {
-        padding: 17px 5px;
+        padding: 17px 10px;
     }
 
     .checkbox {
@@ -490,11 +538,16 @@ input {
 
     .argeement {
         font-size: 14px;
+        line-height: 19px;
     }
 
     .form-btn {
         width: 296px;
         height: 53px;
+    }
+
+    .info-title {
+        line-height: 44px;
     }
 }
 
