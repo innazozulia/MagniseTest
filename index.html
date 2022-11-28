@@ -2,9 +2,9 @@
 <html dir="rtl" lang="ar">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>التداول باحتراف</title>
     <link rel="icon" type="image/x-icon" href="/img/icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,34 +13,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- slider css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="main-container">
         <!-- full screen  -->
         <div class="content">
-            <img class="logo" src="./img/logo.png" alt="logo" />
+            <img class="logo" src="./img/logo.png" alt="logo">
             <h1>هل تطمح للتداول باحترافية </h1>
             <p class="subtitle">من فضلك تداول بمعرفة </p>
             <p class="description">أرسل بياناتك اليوم لتحصل على خدمتنا المجانية المُبتكرة</p>
             <form action="#">
                 <input type="text" placeholder="ali">
                 <input type="text" placeholder="ali@arabic.co.ae">
-                <input type="password" placeholder="الهاتف">
+                <input class="password" type="password" placeholder="الهاتف">
                 <div class="checkbox">
                     <label for="argeement" class="argeement">نشرة اسبوعية وعروض خاصة وتحديثات مستمرة</label>
-                    <input type="checkbox" name="argeement">
+                    <input type="checkbox" id="argeement">
                 </div>
                 <button class="form-btn">سجل الآن</button>
             </form>
         </div>
         <!-- mobile screen -->
-        <div class="content-mobile  ">
+        <div class="content-mobile">
             <div class="wrapper-content">
-                <img class="logo" src="./img/logo.png" alt="logo" />
+                <img class="logo" src="./img/logo.png" alt="logo">
                 <h1>هل تطمح للتداول باحترافية</h1>
                 <p class="subtitle">من فضلك تداول بمعرفة </p>
             </div>
@@ -51,16 +50,15 @@
                     <input type="text" placeholder="ali@arabic.co.ae">
                     <input type="password" placeholder="الهاتف">
                     <div class="checkbox">
-                        <label for="argeement" class="argeement">نشرة اسبوعية وعروض خاصة وتحديثات مستمرة</label>
-                        <input type="checkbox" name="argeement">
+                        <label for="argee" class="argeement">نشرة اسبوعية وعروض خاصة وتحديثات مستمرة</label>
+                        <input type="checkbox" id="argee">
                     </div>
                     <button class="form-btn">سجل الآن</button>
                 </form>
             </div>
-
         </div>
     </div>
-    <div class="info parallax">
+    <div class="info-container parallax">
         <div class="statistics-container ">
             <div class="statistics-item">
                 <img class="number" src="./img/number-1.png" alt="statistic">
@@ -94,8 +92,7 @@
             <div class="achievements-item">
                 <img class="icon" src="./img/icon-3.png" alt="icon">
                 <h2 class="achievements-title">الاسهم</h2>
-                <p class="achievements-text">اختر من بين أكثر من 450 سهم للتداول في السوق العالمية
-                </p>
+                <p class="achievements-text">اختر من بين أكثر من 450 سهم للتداول في السوق العالمية</p>
             </div>
             <div class="achievements-item">
                 <img class="icon" src="./img/icon-4.png" alt="icon">
@@ -104,7 +101,7 @@
                     أفضل العملات</p>
             </div>
             <div class="achievements-item">
-                <img class="icon" src="./img/icon-5.png" alt="icon">
+                <img class="db" src="./img/icon-5.png" alt="icon">
                 <h2 class="achievements-title">العملات الاجنيبة</h2>
                 <p class="achievements-text">استكشف أكبر سوق مالي في العالم. تداول أزواج العملات الرئيسية والناشئة
                     المتوفرة على منصاتنا.</p>
@@ -119,7 +116,6 @@
                 <button class="achievements-btn">سجل الآن</button>
             </div>
         </div>
-
         <!-- modile version -->
         <div class="slider-wrapper">
             <div class="swiper">
@@ -141,7 +137,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="swiper-slide">
                         <div class="achievements-item">
                             <img class="icon" src="./img/icon-3.png" alt="icon">
