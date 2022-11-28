@@ -515,7 +515,7 @@ input {
     }
 
     .wrapper-form {
-        margin-top: 309px;
+        margin-top: 220px;
     }
 
     .content-mobile {
@@ -560,7 +560,7 @@ input {
     }
 
     .achievements-text {
-        padding: 0 4px;
+        padding: 0 10px;
         line-height: 34px;
     }
 
@@ -580,7 +580,7 @@ input {
     .info-title {
         margin: 0 auto;
         font-size: 34px;
-        margin-bottom: 67px;
+        margin-bottom: 136px;
 
     }
 
