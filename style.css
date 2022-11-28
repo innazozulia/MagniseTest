@@ -163,7 +163,6 @@ input:last-child {
     justify-content: space-between;
     max-width: 792px;
     margin: 0 auto;
-    /* check */
     padding: 82px 10px;
     flex-wrap: wrap-reverse;
     gap: 10px;
@@ -203,8 +202,6 @@ input:last-child {
     margin: 0 auto;
     justify-content: center;
     gap: 74px;
-    /* gap: 110px; */
-
 }
 
 .achievements-item {
@@ -222,9 +219,10 @@ input:last-child {
 }
 
 .icon {
-    width: 70px;
-    height: 63px;
+    width: 44px;
+    height: 60px;
     object-fit: contain;
+    margin-top: 10px;
 }
 
 .achievements-title {
@@ -283,6 +281,7 @@ input:last-child {
     -moz-box-shadow: 3px 14px 33px 30px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 14px 33px 30px rgba(0, 0, 0, 0.75);
     width: 352px;
+    width: 100%;
     height: 71px;
     border-radius: 5px;
     font-family: 'Tajawal', sans-serif;
@@ -300,13 +299,35 @@ input:last-child {
     right: 3px;
     bottom: 20px;
     visibility: hidden;
-    margin: 0px 5px;
+
 }
 
 
 @media screen and (max-width: 1600px) {
     .container {
-        background: linear-gradient(rgb(55 53 53 / 80%), rgb(28 28 28 / 60%))url("./img/bg.png");
+        background: linear-gradient(rgb(55 53 53 / 80%), rgb(28 28 28 / 60%)), url("./img/bg.png");
+    }
+
+    .content {
+        right: 45px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .content {
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .content {
+        right: 340px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .content {
+        right: 240px;
     }
 
 }
@@ -352,6 +373,7 @@ input:last-child {
         margin-top: 310px;
     }
 }
+
 
 @media screen and (max-width:970px) {
     .content-mobile {
