@@ -11,5 +11,5 @@ Main section 1920
 Main section info
 <img width="1055" alt="info 1920" src="https://user-images.githubusercontent.com/117219185/204288271-7b153061-ddd9-4f9d-a87c-bfacfcab84ea.png">
 
-Achivment section
+Achievements Container 
 <img width="1048" alt="achivment" src="https://user-images.githubusercontent.com/117219185/204288350-f2f72220-83b9-4d98-8bd6-071e9cde4d90.png">
